@@ -1,0 +1,17 @@
+.add__product{
+    display: flex;
+        justify-content: flex-end;
+
+        .add{
+            font-size: 28px;
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+            margin-right: 100px;
+            padding: 10px 20px;
+            background-color: rgb(26, 241, 170);
+            box-shadow: 1px 1px 10px 1px rgba(139, 139, 139, 0.301);
+            
+        }
+    
+}

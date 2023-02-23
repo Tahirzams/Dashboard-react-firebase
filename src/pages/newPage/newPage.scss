@@ -1,0 +1,90 @@
+.new__main{
+    min-height: 100vh;
+
+    .title{
+        color: rgb(196, 196, 196);
+        box-shadow: 1px 1px 6px 1px rgba(8, 7, 7, 0.219);
+    }
+    .new__mid{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .new__left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .img{
+            width: 200px;
+            height: 200px;
+            margin-top: 50px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.158);
+        }
+        .file__div{
+            display: flex;
+            justify-content: center;
+        }
+        .chooseFile{
+            display: none;
+        
+        }
+        .Edit{
+            background-color: rgba(31, 226, 194, 0.726);
+            padding: 8px 14px;
+            cursor: pointer;
+        }
+    }
+    .new__right{
+        flex: 2;
+       display: flex;
+       flex-wrap: wrap;
+       margin-left: 10px;
+      
+       
+
+        .input__div{
+            margin: 10px ;
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+
+            .new__label{
+                text-transform: capitalize;
+            }
+
+            input{
+                width: 200px;
+                margin-top: 10px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid gray;
+                font-size: 17px;
+                background-color: transparent;
+                &::placeholder{
+                    font-size: 15px; 
+                }
+            }
+        }
+        .btn{
+            border: none;
+            width: 100px;
+            height: 40px;
+            margin: 30px 100px 0 20px;
+            background-color: crimson;
+            color: white;
+            font-weight: 600;
+            font-size: 15px;
+            &:disabled{
+                background-color: rgba(145, 6, 33, 0.5);
+                cursor: not-allowed;
+            }
+            &.hide{
+                display: none;
+            }
+        }
+    }
+}
+

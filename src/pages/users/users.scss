@@ -1,0 +1,53 @@
+.user__main{
+    .add__user{
+        display: flex;
+        justify-content: flex-end;
+
+        .add{
+            font-size: 28px;
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+            margin-right: 100px;
+            padding: 10px 20px;
+            background-color: rgb(26, 241, 170);
+            box-shadow: 1px 1px 10px 1px rgba(139, 139, 139, 0.301);
+            
+        }
+    }
+    .user__table{
+        margin-left: 50px;
+    }
+}
+        .action__cell{
+            display: flex;
+            justify-content: space-around;
+          
+            width: 150px;
+        }
+        .view__btn, .delete__btn{
+            border: none;
+            padding:8px;
+            margin:2px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(223, 63, 63, 0.849);
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .view__btn{
+            background-color: rgba(48, 173, 48, 0.952);
+        }
+        .image__row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            .id{
+                visibility: hidden;
+              
+            }
+        }

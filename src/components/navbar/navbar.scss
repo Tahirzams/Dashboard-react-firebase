@@ -1,0 +1,109 @@
+.nav__main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 15px;
+    background-color: rgba(128, 128, 128, 0.308);
+   
+
+    .nav__menu__btn{
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      background-color: rgba(128, 206, 171, 0.781);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .nav__search{
+        display: flex;
+        align-items: center;
+        border: 1px solid gray;
+        padding: 2px;
+        border-radius: 4px ;
+        margin-left: 50px;
+
+        input{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            padding: 0 2px;
+            font-size: 17px;
+
+            &::placeholder{
+                font-size: 17px;
+                color: rgb(176, 176, 177);
+            }
+        }
+    }
+
+    .nav__links{
+        display: flex;
+        align-items: center;
+
+        .nav__link{
+            margin: 0 8px;
+        }
+
+        .language{
+            display: flex;
+            align-items: center;
+        }
+        .notif{
+            position: relative;
+            .notif__count{
+                position: absolute;
+                top: -6px;
+                right: -4px;
+                background-color: red;
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                font-size: 10px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: black;
+            }
+        }
+
+    }
+
+    .nav__profile img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+}
+
+
+@media (max-width:768px) {
+    .nav__main{
+        flex-direction: column-reverse;
+        background-color: transparent;
+
+        .nav__search{
+            width: 55%;
+            padding: 8px 0;
+            margin: 8px 0;
+            justify-content: space-between;
+
+            input{
+                width: 90%;
+                line-height: 30px;
+                font-size: 22px;
+            }
+        }
+        .nav__links{
+            background-color: rgba(128, 128, 128, 0.308);
+            width: 100%;
+            justify-content: end;
+        }
+    }
+    
+}

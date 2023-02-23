@@ -1,0 +1,113 @@
+.sidebar__main{
+    flex: 1;
+    border-right: 0.5px solid rgb(219, 216, 216);
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+    max-height: 100vh;
+    position: sticky;
+    
+    .sidebar__top{
+        display: flex;
+        justify-content: space-between;
+        border-bottom:  0.5px solid rgb(221, 217, 217);
+        padding: 5px 5px 5px 10px ;
+        .menu__btn{
+            margin-left: 20px;
+            width: 30px;
+            height: 30px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            .btn{
+                font-size: 30px;
+                border-radius: 50%;
+                box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.349);
+                color: black;
+            }
+           
+            
+        }
+       
+    }
+    .sidebar__center{
+        margin-left: 5px;
+        .nav__div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 5px 2px;
+           
+
+            &:hover{
+                background-color: rgba(140, 127, 255, 0.582);
+            }
+        }
+        
+
+        .icon{
+            color: rgb(136, 26, 226);
+            display: flex;
+            align-items: center;
+            padding: 0 8px 0 0;
+        }
+
+        .nav__headings{
+            color: gray;
+            margin-top: 5px;
+        }
+        
+       
+        .sidebar__nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 5px;
+            text-decoration: none;
+            height: 30px;
+            color: black;
+           
+
+           
+        }
+
+    }
+    .sidebar__bottom{
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      background-color: rgba(84, 18, 190, 0.329);
+      margin-top: 10px;
+        .color__option{
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+        }
+        .white{
+            background-color: white;
+            box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.137);
+        }
+        .dark{
+            background-color: black;
+            box-shadow: 1px 1px 4px 1px rgba(255, 255, 255, 0.11);
+        }
+    }
+}
+
+
+@media (max-width:540px) {
+    .sidebar__main{
+        position: fixed;
+        z-index: 10000;
+        background-color: rgb(115, 218, 194);
+        color: black;
+       
+        
+    }
+    .sidebar__nav{
+        color: rgb(0, 0, 0);
+    }
+    
+}

@@ -1,0 +1,95 @@
+.widget__main{
+    display: flex;
+    margin-top: 10px;
+  
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    .single__widget{
+        flex: 1;
+        box-shadow: 1px 1px 12px 0.2px rgba(0, 0, 0, 0.205);
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+       
+        height: 100px;
+        
+        .widget__left{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .widget__count{
+                font-size: 22px;
+            }
+            .widget__desc{
+                font-size: 12px;
+            }
+
+        }
+        .widget__right{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+
+        }
+    }
+    
+    .users__icon{
+        background-color: rgba(255, 0, 0, 0.349);
+        color: rgb(196, 17, 17);
+        
+
+}
+.orders__icon{
+    background-color: rgba(219, 216, 0, 0.432);
+    color: rgb(178, 196, 21);
+
+}
+.earnings__icon{
+    background-color: rgba(0, 128, 0, 0.377);
+    color: green;
+
+}
+.balance__icon{
+    background-color: rgba(128, 0, 128, 0.37);
+    color: purple;
+
+}
+    }
+    .red{
+        color: red;
+    }
+    .green{
+        color: green;
+    }
+
+    @media (max-width:768px) {
+        
+        .widget__main{
+            display: grid;
+            grid-template-columns: 1fr  1fr ;
+        }
+        .single__widget{
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        
+    }
+    @media (max-width:540px) {
+        .widget__main{
+                grid-template-columns: 1fr ;
+                max-width: 100vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+               .single__widget{
+                width: 60%;
+               }
+                
+    }
+}
+
+

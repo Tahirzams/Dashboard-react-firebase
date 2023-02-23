@@ -1,0 +1,82 @@
+body.dark{
+}
+.app__main.dark {
+    background-color: black;
+    .single__widget {
+        color: gray;
+        box-shadow: 1px 1px 12px 0.2px rgba(189, 189, 189, 0.205);
+    }
+    .chart__grid {
+        stroke: rgba(141, 140, 140, 0.493);
+    }
+    .tableCont {
+        background-color: black;
+        color: gray;
+    }
+    .tableCell {
+        color: gray;
+    }
+    .nav__main {
+        color: rgb(202, 199, 199);
+
+        .nav__search {
+            color: gray;
+        }
+        .nav__links {
+            color: rgb(202, 199, 199);
+            .notif__count {
+                color: white;
+            }
+        }
+    }
+    // sidebar_______________
+    .sidebar__main{
+        color: gray;
+        border-right: 0.5px solid rgb(63, 60, 60);
+        .sidebar__top{
+            border-bottom: 1px solid rgb(90, 89, 89);
+              
+        }
+        .btn{
+            color: aliceblue;           
+        }
+        .sidebar__nav{
+            color: gray;
+            .icon{
+                color: rgb(194, 194, 194);
+            }
+        }
+    }
+    .user__table{
+        color: gray;
+    }
+
+    .MuiDataGrid-root{
+        color: gray;
+    }
+    .MuiSvgIcon-root{
+        color: gray;
+    }
+// new page___________
+    .new__main{
+        .input__div{
+            .new__label, .new__input{
+                color: gray;
+            }
+        }
+
+        .title{
+            box-shadow: 1px 1px 6px 3px rgba(196, 196, 196, 0.212);
+        }
+    }
+    // single__________
+    .single__main{
+        .top__left{
+            box-shadow: 1px 1px 15px 3px rgba(46, 46, 46, 0.842);
+            .content{
+                color: gray;
+            }
+        }
+    }
+
+}

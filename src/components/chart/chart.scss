@@ -1,0 +1,30 @@
+.chart__main{
+    max-width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+.title{
+    color: gray;
+    padding: 10px 80px;
+    opacity: 0.7;
+    transform: translateY(50px);
+}
+   
+}
+.chart__main::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+  }
+  
+  .chart__main::-webkit-scrollbar-thumb {
+    background-color: rgb(114, 113, 113);
+    border-radius: 10px;
+    height: 200px;
+  }
+  
+  .chart__main::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+.chart__area{
+    scrollbar-color: red;
+
+}

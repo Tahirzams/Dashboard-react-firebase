@@ -1,0 +1,11 @@
+body{
+    overflow-x: hidden;
+}
+.app__main{
+    display: flex;
+    flex-direction: row;
+
+    .routes{
+        flex: 5;
+    }
+}
